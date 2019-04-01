@@ -1,5 +1,3 @@
-
-// alert("111");
 $(function(){
 var deg=0;
 setTimeout(function(){
@@ -62,13 +60,13 @@ $(oClass).blur(function(){
    }
 })
 }
-$(".register_repassword").blur(function(){
-   if(($(".register_repassword").val()==$(".register_password").val())&&json[".register_password"]==true){
-      $(".register_repassword").next().css("background-image","url(dui.png)");
+$(this).blur(function(){
+   if(($(this).val()==$(".register_password").val())&&json[".register_password"]==true){
+      $(this).next().css("background-image","url(dui.png)");
       json[".register_repassword"]=true;
    }
-   else if(($(".register_repassword").val()!=$(".register_password").val())){
-      $(".register_repassword").next().css("background-image","url(cuo.png)");
+   else if(($(this).val()!=$(".register_password").val())){
+      $(this).next().css("background-image","url(cuo.png)");
       json[".register_repassword"]=false;
    }
 });
@@ -90,6 +88,8 @@ $(".register_btn").click(function(){
       return false;
    }
 });
-
+$(".register_yzm").focus(function(){
+   $(this).css("color","#000");
+})
 
 });
