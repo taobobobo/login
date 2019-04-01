@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>XXXXXX</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="login.css">
+    <script src="jquery-3.1.1.min.js"></script>
+    <script src="js.js"></script>
+</head>
+
+<body>
+    <div class="box">
+        <div class="register_box">
+            <div class="login_logo">
+                <img src="register-logo.jpg" alt="" class="login_logo_img">
+            </div>
+            <h3 class="login_text">用户注册</h3>
+            <div class="input_box">
+                <div class="content">
+                    <p class="eglish">
+                        User Register
+                    </p>
+                    <form action="register.php" method="POST">
+                        <div class="input_name sr_box clearfix">
+                            <span class="title">用&ensp;户&ensp;名 : </span>
+                            <div class="text_box">
+                                <input type="text" name="name" id="" class="register_name sr"
+                                    placeholder="6-16位 数字字母下划线">
+                                    <b class="dx-icon"></b>
+                            </div>
+                        </div>
+                        <div class="input_psd sr_box clearfix">
+                            <span class="title">密&emsp;&emsp;码 : </span>
+                            <div class="text_box">
+                                <input type="password" name="password" id="" class="register_password sr"
+                                    placeholder="6-16位 数字字母下划线">
+                                    <b class="dx-icon"></b>
+                                </div>
+                        </div>
+                        <div class="input_repsd sr_box clearfix">
+                            <span class="title">确认密码 : </span>
+                            <div class="text_box">
+                                <input type="password" name="re_password" id="" class="register_repassword sr"
+                                    placeholder="重复密码">
+                                    <b class="dx-icon"></b>
+                                </div>
+                        </div>
+                        <div class="input_yzm sr_box clearfix">
+                            <span class="title">验&ensp;证&ensp;码 : </span>
+                            <input type="text" id="" class="register_yzm sr">
+                            <div class="yzm_txt">点击获取验证码</div>
+                        </div>
+                        <p class="login_register">
+                            已有账号? 返回<a href="index.html" target="_blank" class="register_txt">登录</a>
+                        </p>
+                        <div class="login_btn">
+                            <p></p>
+                            <input type="submit" value="注册" class="register_btn">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
