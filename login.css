@@ -90,57 +90,7 @@ body{
 .input_box .psd_icon{
     background-position: 5px -120px;
 }
-/* 
- .input_box b{
-    background: rgb(223, 221, 221);
-}
-.input_box .right_line{
-    right:0px;
-    transform: rotateY(180deg);
-}
-.input_box .left_line{
-    left: 0px;
-}
-.input_box .right_line,
-.input_box .left_line{
-    position: absolute;
-    width: 1px;
-    top: 0;
-   height: 0;
-} 
-.input_box .bottom_line{
-    display: block;
-    height: 1px;
-    width:0;
-    bottom:0px;
-    margin:0 auto;
-}
 
-.input_box:hover .left_line{
-    animation: rightLine .5s linear forwards;
-}
-.input_box:hover .bottom_line{
-    animation: bottomLine .5s .5s linear forwards;
-}
-.input_box:hover .right_line{
-    animation: rightLine .5s  linear forwards;
-}
-@keyframes rightLine{
-    0%{
-       height: 0;
-    }
-    100%{
-        height: 100%; 
-    }
-}
-@keyframes bottomLine{
-    0%{
-        width: 0;
-    }
-    100%{
-        width: 100%;
-    }
-}  */
 .input_box .login_rember{
     text-align: right;
     margin: 20px 0 0 0 ;
@@ -211,11 +161,10 @@ body{
 
 .register_box{
     position: absolute;
-    height: 600px;
     width: 500px;
     top: 50%;
     left:50%;
-    margin-top: -300px;
+    margin-top: -275px;
     margin-left: -250px;
     /* background: orange; */
     transform:translateY(600px);
