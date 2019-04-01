@@ -60,7 +60,7 @@ $(oClass).blur(function(){
    }
 })
 }
-$(this).blur(function(){
+$(".register_repassword").blur(function(){
    if(($(this).val()==$(".register_password").val())&&json[".register_password"]==true){
       $(this).next().css("background-image","url(dui.png)");
       json[".register_repassword"]=true;
