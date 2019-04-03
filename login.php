@@ -1,11 +1,11 @@
 <?php
 include('public.php');
-if(!empty($_POST['name'])){
+if(!empty($_GET['name'])){
     $file=file('text.txt');
     print_r($file);
     $arr=explode('|',$file[0]);
-    $name=$_POST['name'];
-    $psd=mdPass($_POST['password']);
+    $name=$_GET['name'];
+    $psd=mdPass($_GET['password']);
     if($name==$arr[0] && $psd==$arr[1]){
          echo "<script>window.location.href='suc.html';</script>";
     }else if($name!=$arr[0]){
