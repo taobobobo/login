@@ -29,6 +29,11 @@ $(".login_name").blur(function(){
 $(".login_password").blur(function(){
    $(".psd_icon").css("background-position","5px -120px");
 });
+$(".sr").focus(function(){
+   deg+=180;
+   $(".login_logo_img").css("transform","rotateY("+deg+"deg)");
+});
+
 $(".yzm_txt").click(function(){
    var show="";
   $(".yzm_txt").css({"letter-spacing":"10px","font-size":"24px","font-style":"italic"});
